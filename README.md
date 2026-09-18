@@ -1,3 +1,16 @@
+<!-- fork-notice-banner -->
+## 关于本项目
+
+本项目是基于 [ayangweb/BongoCat](https://github.com/ayangweb/BongoCat) 的独立 fork，正在改造为独立项目。
+
+- 原作者：ayangweb
+- 原项目以 **MIT** 协议发布，版权归原作者所有，详见 [NOTICE.md](./NOTICE.md)
+- 本项目不再跟随上游同步，独立发展
+
+**注意**：仓库内 `src-tauri/assets/models/` 下的默认角色模型继承自上游，美术授权待澄清，将在正式发布前替换为自有素材。当前仅供开发验证使用，不建议商用。
+
+---
+
 ![BongoCat](https://socialify.git.ci/ayangweb/BongoCat/image?custom_description=&description=1&font=Source+Code+Pro&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2Fayangweb%2FBongoCat%2Fblob%2Fmaster%2Fsrc-tauri%2Fassets%2Flogo-mac.png%3Fraw%3Dtrue&name=1&owner=1&pattern=Floating+Cogs&pulls=1&stargazers=1&theme=Auto)
 
 <div align="center">
