@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "BongoCat",
+  "productName": "AnygoPet",
   "version": "../package.json",
-  "identifier": "com.ayangweb.BongoCat",
+  "identifier": "com.anygo.pet",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
@@ -14,7 +14,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "BongoCat",
+        "title": "AnygoPet",
         "url": "index.html/#/",
         "shadow": false,
         "alwaysOnTop": true,
@@ -52,7 +52,7 @@
     "category": "Entertainment",
     "createUpdaterArtifacts": true,
     "targets": ["nsis", "dmg", "app", "appimage", "deb", "rpm"],
-    "shortDescription": "BongoCat",
+    "shortDescription": "AnygoPet",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
