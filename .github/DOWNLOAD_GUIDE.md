@@ -1,65 +1,24 @@
 # 下载指南
 
+> **当前尚未发布正式版本。** 首个版本预计面向 Windows 平台，发布渠道确定后会更新本文档。
+
 ## 系统要求
 
-- macOS 12 或更高版本。
-- Windows 10 或更高版本。
-- Linux 带有 X11 环境。
+| 平台    | 最低版本                      | 状态                 |
+| ------- | ----------------------------- | -------------------- |
+| Windows | Windows 10 或更高             | 主要目标平台         |
+| macOS   | macOS 12 或更高               | 可构建，非当前优先级 |
+| Linux   | 需 X11 环境（Wayland 未验证） | 可构建，非当前优先级 |
 
-## macOS
+## 分发渠道（规划中）
 
-### 手动下载
+| 渠道                    | 状态 | 备注                                                                        |
+| ----------------------- | ---- | --------------------------------------------------------------------------- |
+| GitHub Releases         | 待定 | [zkoreist/AnygoPet/releases](https://github.com/zkoreist/AnygoPet/releases) |
+| Microsoft Store（MSIX） | 待定 | 可规避杀软对全局键鼠监听的误报，且微软提供免费签名                          |
 
-- Apple Silicon：下载 `BongoCat_aarch64.dmg`
-- Intel Chip：下载 `BongoCat_x64.dmg`
+> 从源码自行构建请参考 [README](./README.md) 的「从源码构建」一节。
 
-### Homebrew 下载
+## 更新机制
 
-1. 添加 BongoCat 的 tap 源：
-
-```bash
-brew tap ayangweb/BongoCat
-```
-
-2. 安装：
-
-```bash
-brew install --no-quarantine bongo-cat
-```
-
-3. 更新：
-
-```bash
-brew upgrade bongo-cat
-```
-
-4. 卸载：
-
-```bash
-brew uninstall --cask bongo-cat
-
-brew untap ayangweb/BongoCat
-```
-
-## Windows
-
-- 64 位系统：下载 `BongoCat_x64.exe`
-- 32 位系统：下载 `BongoCat_x86.exe`
-- ARM64 架构：下载 `BongoCat_arm64.exe`
-
-## Linux(X11)
-
-### 手动下载
-
-- 64 位系统：
-  - Debian / Ubuntu：下载 `BongoCat_amd64.deb`
-  - Fedora / RHEL：下载 `BongoCat_x86_64.rpm`
-  - 通用版本：下载 `BongoCat_amd64.AppImage`
-- ARM64 架构：
-  - Debian / Ubuntu：下载 `BongoCat_arm64.deb`
-  - Fedora / RHEL：下载 `BongoCat_aarch64.rpm`
-  - 通用版本：下载 `BongoCat_aarch64.AppImage`
-
-### AUR 下载
-
-- Manjaro / ArchLinux: `yay -S bongo-cat`
+应用内置自动更新（基于 Tauri updater），更新包使用项目自有密钥签名。可在偏好设置中关闭。

@@ -4,8 +4,7 @@
   "version": "1.1.0",
   "private": true,
   "author": {
-    "name": "ayangweb",
-    "email": "ayangweb@foxmail.com"
+    "name": "zkoreist"
   },
   "scripts": {
     "dev": "run-s build:icon dev:vite",

@@ -1,6 +1,6 @@
 # 贡献指南
 
-非常感谢您对 BongoCat 的关注和贡献！在您提交贡献之前，请先花一些时间阅读以下指南，以确保您的贡献能够顺利进行。
+非常感谢您对 AnygoPet 的关注和贡献！在您提交贡献之前，请先花一些时间阅读以下指南，以确保您的贡献能够顺利进行。
 
 ## 透明的开发
 
@@ -60,4 +60,4 @@ Commit messages 请遵循[conventional-changelog 标准](https://www.conventiona
 - perf: 性能优化
 - chore: 其他提交
 
-期待您的参与，让我们一起使 BongoCat 变得更好！
+期待您的参与，让我们一起使 AnygoPet 变得更好！
