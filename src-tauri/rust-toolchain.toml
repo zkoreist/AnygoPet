@@ -1,2 +1,8 @@
+# 锁定 Rust stable 通道，避免换机后工具链漂移。
+#
+# 注意：这里刻意不写死 "stable-x86_64-pc-windows-msvc"。Windows 上确实必须用 msvc 目标
+# （不能用 gnu），但写死 triple 会让 macOS / Linux 的贡献者无法使用本文件。
+# Windows 上的正确性请在装完后用 `rustup show` 确认；若显示 -gnu，执行：
+#   rustup default stable-x86_64-pc-windows-msvc
 [toolchain]
 channel = "stable"

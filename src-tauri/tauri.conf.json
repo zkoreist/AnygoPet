@@ -50,9 +50,11 @@
   "bundle": {
     "active": true,
     "category": "Entertainment",
+    "publisher": "zkoreist",
+    "copyright": "Copyright © 2025 ayangweb, © 2026 zkoreist (MIT)",
     "createUpdaterArtifacts": true,
     "targets": ["nsis", "dmg", "app", "appimage", "deb", "rpm"],
-    "shortDescription": "AnygoPet",
+    "shortDescription": "A desktop pet driven by your keyboard, mouse and gamepad",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
