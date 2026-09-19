@@ -1,0 +1,10 @@
+# pnpm v11+ 起，依赖的 postinstall 构建脚本默认被拦截（strictDepBuilds 默认 true），
+# 未审核的脚本会让安装以非零码退出（ERR_PNPM_IGNORED_BUILDS）。
+# 下列 3 个包经确认需要执行构建脚本，故显式放行。
+allowBuilds:
+  # 文件监听原生模块（vite / tauri dev 热更新用）
+  '@parcel/watcher': true
+  # vite 依赖的 esbuild 原生二进制（@esbuild/win32-x64 等平台包）
+  esbuild: true
+  # 安装 git hooks（对应 package.json 的 prepare 脚本）
+  simple-git-hooks: true
